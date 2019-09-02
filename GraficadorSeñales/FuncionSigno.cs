@@ -6,26 +6,32 @@ using System.Threading.Tasks;
 
 namespace GraficadorSeñales
 {
-    class SeñalParabolica
+    class FuncionSigno
     {
         public List<Muestra> Muestras { get; set; }
 
-        public SeñalParabolica()
+        public FuncionSigno()
         {
             Muestras = new List<Muestra>();
         }
         public double evaluar(double tiempo)
         {
-            double resultado;
+            double resultado = 0;
 
-            if (tiempo >= 0)
+            if (tiempo > 0)
             {
-                resultado = (tiempo*tiempo)/2.0;
-            } else
+                resultado = 1.0;
+            }
+            if (tiempo == 0)
             {
-                resultado = 0.0;
+                resultado = 0;
+            }
+            if (tiempo < 0)
+            {
+                resultado = -1;
             }
             
+
             return resultado;
         }
     }

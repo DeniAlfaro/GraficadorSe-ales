@@ -37,7 +37,9 @@ namespace GraficadorSeñales
 
             //SeñalSenoidal señal = new SeñalSenoidal(amplitud, fase, frecuencia);
 
-            SeñalParabolica señal = new SeñalParabolica();
+            //SeñalParabolica señal = new SeñalParabolica();
+
+            FuncionSigno señal = new FuncionSigno();
 
             double periodoMuestreo = 1 / frecuenciaMuestreo;
 
@@ -71,6 +73,8 @@ namespace GraficadorSeñales
             plnEjeY.Points.Clear();
             plnEjeY.Points.Add(adaptarCoordenadas(0.0, amplitudMaxima, tiempoInicial, amplitudMaxima));
             plnEjeY.Points.Add(adaptarCoordenadas(0.0, -amplitudMaxima, tiempoInicial, amplitudMaxima));
+
+            
         }
 
         public Point adaptarCoordenadas(double x, double y, double tiempoInicial, double amplitudMaxima)
