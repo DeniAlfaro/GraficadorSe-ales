@@ -12,11 +12,11 @@
             <ColumnDefinition Width="10*"/>
         </Grid.ColumnDefinitions>
         <TextBlock HorizontalAlignment="Left" Margin="49,29,0,0" TextWrapping="Wrap" Text="Tipo de señal:" VerticalAlignment="Top"/>
-        <TextBlock x:Name="TiempoFinal" HorizontalAlignment="Left" Margin="872,60,0,0" TextWrapping="Wrap" Text="Tiempo final" VerticalAlignment="Top"/>
-        <TextBlock x:Name="TiempoInicial" HorizontalAlignment="Left" Margin="872,19,0,0" TextWrapping="Wrap" Text="Tiempo inicial" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtTiempoFinal" HorizontalAlignment="Left" Height="23" Margin="981,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="1" Grid.ColumnSpan="2"/>
-        <TextBox x:Name="txtTiempoInicial" HorizontalAlignment="Left" Height="23" Margin="981,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="0" Grid.ColumnSpan="2"/>
-        <Button x:Name="BtnGraficar" Click="BtnGraficar_Click" Content="Graficar" HorizontalAlignment="Left" Margin="24,123,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1"/>
+        <TextBlock x:Name="TiempoFinal" HorizontalAlignment="Left" Margin="856,72,0,0" TextWrapping="Wrap" Text="Tiempo final" VerticalAlignment="Top"/>
+        <TextBlock x:Name="TiempoInicial" HorizontalAlignment="Left" Margin="856,31,0,0" TextWrapping="Wrap" Text="Tiempo inicial" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtTiempoFinal" HorizontalAlignment="Left" Height="23" Margin="965,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="1" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="txtTiempoInicial" HorizontalAlignment="Left" Height="23" Margin="965,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="0" Grid.ColumnSpan="2"/>
+        <Button x:Name="BtnGraficar" Click="BtnGraficar_Click" Content="Graficar" HorizontalAlignment="Left" Margin="8,135,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1"/>
         <ScrollViewer x:Name="scrGrafica" HorizontalAlignment="Left" Height="197" Margin="141,212,0,0" VerticalAlignment="Top" Width="641" VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Visible" Grid.ColumnSpan="2">
             <Grid>
                 <Polyline Stroke="CornflowerBlue" StrokeThickness="2" Name="plnGrafica"/>
@@ -24,8 +24,8 @@
                 <Polyline Stroke="Black" StrokeThickness="1" Name="plnEjeY" Margin="0,2,0,-2"/>
             </Grid>
         </ScrollViewer>
-        <TextBlock x:Name="FrecuenciaMuestreo" HorizontalAlignment="Left" Margin="872,99,0,0" TextWrapping="Wrap" Text="Frecuencia de muestreo" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtFrecuenciaMuestreo" HorizontalAlignment="Left" Height="23" Margin="14,95,0,0" TextWrapping="Wrap" Text="1000" VerticalAlignment="Top" Width="88" Grid.Column="1"/>
+        <TextBlock x:Name="FrecuenciaMuestreo" HorizontalAlignment="Left" Margin="856,111,0,0" TextWrapping="Wrap" Text="Frecuencia de muestreo" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtFrecuenciaMuestreo" HorizontalAlignment="Left" Height="23" Margin="997,107,0,0" TextWrapping="Wrap" Text="1000" VerticalAlignment="Top" Width="88" Grid.ColumnSpan="2"/>
         <TextBlock x:Name="lblLimiteSuperior" HorizontalAlignment="Left" Margin="45,218,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="22" Width="92" TextAlignment="Right"/>
         <TextBlock x:Name="lblLimiteInferior" HorizontalAlignment="Left" Margin="50,366,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="25" Width="87" TextAlignment="Right"/>
         <TextBlock HorizontalAlignment="Left" Margin="55,294,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" TextAlignment="Right" Height="19" Width="82"/>
@@ -50,6 +50,7 @@
             <ComboBoxItem>Escala de amplitud</ComboBoxItem>
             <ComboBoxItem>Desplazamiento de amplitud</ComboBoxItem>
             <ComboBoxItem>Multiplicacion entre señales</ComboBoxItem>
+            <ComboBoxItem>Escala exponencial</ComboBoxItem>
         </ComboBox>
         <TextBlock HorizontalAlignment="Left" Margin="221,32,0,0" TextWrapping="Wrap" Text="Operacion:" VerticalAlignment="Top"/>
         <Grid x:Name="panelConfiguracionOperacion" HorizontalAlignment="Left" Height="86" Margin="365,32,0,0" VerticalAlignment="Top" Width="152"/>

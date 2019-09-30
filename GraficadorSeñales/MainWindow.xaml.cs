@@ -90,6 +90,11 @@ namespace GraficadorSeñales
                     double cantidadDesplazamiento = double.Parse(((OperacionDesplazamientoAmplitud)(panelConfiguracionOperacion.Children[0])).txtCantidadDesplazamiento.Text);
                     señalResultante = Señal.desplazamientoAmplitud(señal, cantidadDesplazamiento);
                     break;
+                case 2: señalResultante = null;
+                    break;
+                case 3: double exponente = double.Parse(((OperacionEscalaExponencial)(panelConfiguracionOperacion.Children[0])).txtExponente.Text);
+                    señalResultante = Señal.escalaExponencial(señal, exponente);
+                    break;
                 default: señalResultante = null;
                     break;
             }
@@ -175,6 +180,9 @@ namespace GraficadorSeñales
                     break;
                 case 2: //multiplicacion entre señales 
                     mostrarSegundaSeñal(true);
+                    break;
+                case 3: //escala exponencial
+                    panelConfiguracionOperacion.Children.Add(new OperacionEscalaExponencial());
                     break;
                 default:
                     break;
