@@ -22,6 +22,7 @@
                 <Polyline Stroke="CornflowerBlue" StrokeThickness="2" Name="plnGrafica"/>
                 <Polyline Stroke="Black" StrokeThickness="1" Name="plnEjeX"/>
                 <Polyline Stroke="Black" StrokeThickness="1" Name="plnEjeY" Margin="0,2,0,-2"/>
+                <Polyline Stroke="Coral" StrokeThickness="2" Name="plnGrafica_2"/>
             </Grid>
         </ScrollViewer>
         <TextBlock x:Name="FrecuenciaMuestreo" HorizontalAlignment="Left" Margin="856,111,0,0" TextWrapping="Wrap" Text="Frecuencia de muestreo" VerticalAlignment="Top"/>
