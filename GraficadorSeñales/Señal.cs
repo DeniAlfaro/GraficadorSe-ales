@@ -13,7 +13,6 @@ namespace GraficadorSeñales
         public double TiempoInicial { get; set; }
         public double TiempoFinal { get; set; }
         public double FrecuenciaMuestreo { get; set; }
-
         public double AmplitudMaxima { get; set; }
         public double Alpha { get; set; }
 
@@ -134,6 +133,7 @@ namespace GraficadorSeñales
                     señal.AmplitudMaxima = Math.Abs(muestra.Magnitude);
                 }
             }
+
             return resultado;
         }
     }
